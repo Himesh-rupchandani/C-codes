@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a = 5;
+    int* b = &a;
+    cout << *b << endl;
+    cout <<  b << endl;
+    cout << &a << endl;
+    return 0;
+}
+
+/* 5
+0x7ffe847b7204
+0x7ffe847b7204
+
+Here *b---> value of address
+where b(b=&a) and &a ----> Address of a  */
