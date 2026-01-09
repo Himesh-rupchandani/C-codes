@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-    typedef struct himesh{
+    typedef struct employee{
         int salary;
         int age;
     }ep;
