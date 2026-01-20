@@ -9,12 +9,12 @@ int main(){
     cin >> num1 >> num2 >> num3;
     
    int b = (num1>num2) ? ((num1>num3)?num1:num2) : ((num2>num3)?num2:num3);
-    cout << b << endl;
+   cout <<"Number " << b << " is greatest."<< endl;
     
     return 0;
 }
 
 /* 
 Enter the numbers:  12 24 36
-36
+Number 36 is greatest.
   */
