@@ -21,6 +21,6 @@ int main(){
 }
 
 /*
-Enter the number: 2
+Enter the number: 7
 The number is prime number.
 */
