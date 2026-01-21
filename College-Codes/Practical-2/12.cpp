@@ -32,6 +32,7 @@ int main(){
     cout << "Sum of a and b is: " << sum(&a,&b) << endl;
     cout << "Subtraction of a and b is: " << sub(&a,&b) << endl;
     cout << "Multiplication of a and b is: " << multi(&a,&b) << endl;
+    
     if(b!=0)cout << "Division of a and b is: " << div(&a,&b) << endl;
     else cout << "Division by Zero is not allowed." << endl;
     
