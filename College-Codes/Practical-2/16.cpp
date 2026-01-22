@@ -1,0 +1,2 @@
+// Write a program to find GCD of two numbers using function.
+
