@@ -1,0 +1,22 @@
+// check a number if it;s positive,negative or zero.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    
+    if(n==0) cout << "The number is Neither Positive nor Negative.";
+    else if(n>0) cout << "The number is Positive number.";
+    else cout << "The number is Negative number.";
+    
+    
+    return 0;
+}
+
+/*
+Enter a number: -15
+The number is Negative number.
+*/
