@@ -27,9 +27,3 @@ Enter any two number: 12 0
 Enter sign(+,-,*,/): /
 Error! zero is not accepted.
 */
-
-/*
-Enter any two number: 12 0
-Enter sign(+,-,*,/): /
-Error! zero is not accepted.
-*/
