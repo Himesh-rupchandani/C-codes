@@ -1,0 +1,19 @@
+// Greatest among the three.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b,c;
+    cout << "Enter the numbers: ";
+    cin >> a >> b >> c;
+    
+   int d = (a>b) ? ((a>c)?a:c) : ((b>c)?b:c);
+    cout << "Greatest amoung three is: " << d << endl;
+    return 0;
+}
+
+/*
+Enter the numbers: 12 85 9
+Greatest amoung three is: 85
+*/
