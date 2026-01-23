@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+class student{
+    public:
+    string name;
+    float cgpa;
+    long int roll_no;
+    int age;
+};
+
+int main(){
+  student s1;
+  s1.age = 17;
+  s1.roll_no = 92500110005;
+  s1.cgpa = 9.47;
+  s1.name = "Himesh Rupchandani";
+  
+    cout << s1.name << endl;
+    cout << s1.roll_no << endl;
+    cout << s1.cgpa << endl;
+    cout << s1.age << endl;
+    return 0;
+}
+
+/*
+Himesh Rupchandani
+92500110005
+9.47
+17
+*/
