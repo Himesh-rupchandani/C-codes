@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class student{
+  public:
+  
+    string name;
+    long int roll_no;
+    float gpa;
+  student(string n,long int r,float g){ // constructor.
+      name = n;
+      roll_no = r;
+      gpa = g;
+  }
+  
+  student(){ // Defualt constructor.
+      
+  }
+  
+};
+
+int main(){
+    student s1("Himesh",92500110005,8.00);
+    
+    student s2("Rudra",92500110004,8.37);
+    
+    student s3 = s1;  // Deep copy
+    s3.name = "Tirth";
+    
+    cout << s1.name << " " << s1.roll_no << " " << s1.gpa << endl;
+    cout << s2.name << " " << s2.roll_no << " " << s2.gpa << endl;
+    cout << s3.name << " " << s3.roll_no << " " << s3.gpa << endl;
+    
+    return 0;
+}
+
+/*
+Himesh 92500110005 8
+Rudra 92500110004 8.37
+Tirth 92500110005 8
+*/
