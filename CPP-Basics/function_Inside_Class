@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+class cricketer{
+    public:
+    string name;
+    int runs;
+    
+    cricketer(string name,int runs){
+        this->name = name;                  
+        this->runs = runs;
+    }
+    
+    cricketer(){                            // Default constructor.
+        
+    }
+    
+void print(){
+    cout << this->name << " " << this->runs << endl;
+}
+
+};
+
+
+int main(){
+    cricketer s1("Virat Kholi",25000);
+    cricketer s2("Rohit Sharma",18000);
+
+    s1.print();    
+    s2.print();
+    return 0;
+}
+
+/*
+Virat Kholi 25000
+Rohit Sharma 18000
+*/
