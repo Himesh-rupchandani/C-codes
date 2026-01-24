@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class cricketer{
+    public:
+    string name;
+    int runs;
+    
+    cricketer(string name,int runs){
+        this->name = name;                  // this keyword (Only use when outoff constructor and inside the constructor variable name is same.)
+        this->runs = runs;
+    }
+    
+    cricketer(){                            // Default constructor.
+        
+    }
+    
+};
+
+int main(){
+    cricketer s1("Virat Kholi",25000);
+    cricketer s2("Rohit Sharma",18000);
+    
+    cout << s1.name << " " << s1.runs << endl;
+    cout << s2.name << " " << s2.runs << endl;
+    
+    
+    return 0;
+}
+
+/*
+Virat Kholi 25000
+Rohit Sharma 18000
+*/
+}
