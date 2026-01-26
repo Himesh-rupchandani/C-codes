@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+void fandL(int &n){
+    int m = n%10;
+    cout << "Last Digit = " << m << endl;
+    
+    while(n>=10){
+        n = n/10;
+    }
+    cout << "First digit = "<< n << endl;
+    
+}
+
+int main(){
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    
+    fandL(n);
+    
+    return 0;
+}
+
+/*
+Enter a number: 456
+Last Digit = 6
+First digit = 4
+*/
