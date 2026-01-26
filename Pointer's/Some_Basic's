@@ -7,7 +7,8 @@ int main(){
     
     cout << &x << endl;
     cout << p << endl;
-    cout << *p << endl; // (means mai-nai x ki value print ki. )
+    cout << *p << endl; // (means mai-nai x ki value print ki.)
+    cout << &p << endl; // (p ka address alag hoga.) 
     return 0;
 }
 
@@ -15,4 +16,5 @@ int main(){
 0x7ffe725eaf84
 0x7ffe725eaf84
 5
+0x7fffe640a270
 */
