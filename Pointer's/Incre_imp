@@ -7,7 +7,7 @@ int main(){
     
     cout << *ptr << endl; // address(Yani x) ki value.
 
-    *ptr = *ptr + 1; //*ptr mere address ki value hai issliyai address ke value mai(Yani x mai) + 1 hoga.
+    *ptr = *ptr + 1; //*ptr mere address ki value hai issliyai address ke value mai(Yani x mai) + 1 hoga.  (*ptr)++;
     cout << *ptr << endl;
 
     ptr = ptr + 1;     
