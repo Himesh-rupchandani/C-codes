@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Student {
+  // Properties    
+  public:
+  string name;
+  float cgpa;
+  
+  //Methods
+  void getpercentage(int){
+      cout << (cgpa*10) << endl;
+  }
+  
+};
+
+int main(){
+    Student s1;
+    s1.name = "Himesh Rupchandani";
+    s1.cgpa = 9.47;
+    
+    cout << s1.name << endl;
+    cout << s1.cgpa << endl;
+    
+    s1.getpercentage(9.47);
+    return 0;
+}
+
+/*
+Himesh Rupchandani
+9.47
+94.7
+*/
