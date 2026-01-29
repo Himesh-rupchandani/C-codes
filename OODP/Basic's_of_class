@@ -4,11 +4,11 @@ using namespace std;
 class Student {
   // Properties    
   public:
-  string name;
+  string name;    // Data member.
   float cgpa;
   
   //Methods
-  void getpercentage(int){
+  void getpercentage(int){    //Member function.
       cout << (cgpa*10) << endl;
   }
   
