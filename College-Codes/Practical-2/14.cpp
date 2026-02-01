@@ -1,37 +1,48 @@
-// Write a program to find the area of circle,triangle and rectangle.
-
 #include<iostream>
 using namespace std;
 
-float areaOfCircle(float* a){
-    return 3.14*(*a)*(*a);
+float areaofc(float &r){
+    return 3.141565*r*r;
 }
 
-float areaOfTriangle(float *b,float *c){
-    return (0.5*(*b)*(*c));
+float areaoft(float &base,float & height){
+    return 0.5*base*height;
 }
 
-float areaOfRectangle(float *d,float *e){
-    return (*d)*(*e);
+float areaofr(float &len,float &bre){
+    return len*bre;
 }
 
 int main(){
-    float r,base,height,length,breadth;
-    r = 5;
-    base = 10;
-    height = 12.5;
-    length = 32.3;
-    breadth = 25.6;
+    float r,base,height,len,bre;
     
-    cout << "Area of circle is: " << areaOfCircle(&r) << endl;
-    cout << "Area of triangle is: " << areaOfTriangle(&base,&height) << endl;
-    cout << "Area of rectangle is: " << areaOfRectangle(&length,&breadth) << endl;
+    cout << "Enter a radius: ";
+    cin >> r;
+    
+    cout << "Enter base: ";
+    cin >> base;
+    cout << "Enter height: ";
+    cin >> height;
+    
+    cout << "Enter length: ";
+    cin >> len;
+    cout << "Enter breadth: ";
+    cin >> bre;
+    
+    
+    
+   cout << "Area of circle is: " << areaofc(r) << endl;
+   cout << "Area of triangle is: " << areaoft(base,height) << endl;
+   cout << "Area of rectangle is: " << areaofr(len,bre) << endl;
     
     return 0;
 }
 
-/*
-Area of circle is: 78.5
-Area of triangle is: 62.5
-Area of rectangle is: 826.88
-*/
+Enter a radius: 12
+Enter base: 15
+Enter height: 10
+Enter length: 56
+Enter breadth: 36
+Area of circle is: 452.385
+Area of triangle is: 75
+Area of rectangle is: 2016
