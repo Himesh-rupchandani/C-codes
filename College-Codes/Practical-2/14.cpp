@@ -1,3 +1,5 @@
+// Write a program to find the area of circle,triangle and rectangle.
+
 #include<iostream>
 using namespace std;
 
@@ -28,6 +30,8 @@ int main(){
     cin >> len;
     cout << "Enter breadth: ";
     cin >> bre;
+
+    cout << endl;
     
     
     
@@ -38,11 +42,14 @@ int main(){
     return 0;
 }
 
+/*
 Enter a radius: 12
 Enter base: 15
 Enter height: 10
 Enter length: 56
 Enter breadth: 36
+    
 Area of circle is: 452.385
 Area of triangle is: 75
 Area of rectangle is: 2016
+*/
