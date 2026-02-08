@@ -3,23 +3,25 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int n1,n2,gcd = 1;
-    cout << "Enter the numbers: ";
-    cin >> n1 >> n2;
-    
-    if(n2>n1){
-        swap(n1,n2);
-    }
-    
-    for(int i=1;i<=n1;i++){
+int GCD(int &n1,int &n2){
+    int gcd = 1;
+    if(n2>n1) swap(n1,n2);
+    for(int i=1;i<=n2;i++){
         if(n1%i==0 && n2%i==0){
             gcd = i;
         }
     }
+        return gcd;
+}
+
+int main(){
+    int n1,n2;
+    cout << "Enter any two number's: ";
+    cin >> n1 >> n2;
     
-    cout << "GCD number is: " << gcd << endl;
+    cout << "My GCD number is: " << GCD(n1,n2) << endl;
     
+   
     return 0;
 }
 
