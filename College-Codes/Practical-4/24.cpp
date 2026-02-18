@@ -12,7 +12,7 @@ class student{
   public:
   void input(){
       cout << "Enter a name of student: ";
-      cin >> name;
+      getline(cin,name);
       cout << "Enter "<< name <<"'s age: ";
       cin >> age;
       cout << "Enter "<< name <<"'s cgpa: ";
