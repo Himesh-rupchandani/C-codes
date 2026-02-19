@@ -1,0 +1,26 @@
+// Billing System.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int totalItem;
+    double totalTax = 0,Tax = 0.18,price = 0;
+    
+    cout << "Enter an Number for Total Item: ";
+    cin >> totalItem;;
+    string names[totalItem];
+    
+    for(int i=0;i<totalItem;i++){
+        cin.ignore();
+        cout << "Name of Item-" << i+1 <<": ";
+        getline(cin,names[i]);
+        cout << "Price of"<< names[i] << " Item: $";
+        cin >> price;
+        cout << endl;
+    // cout << itemName << endl ;
+    }
+    
+    
+    return 0;
+}
