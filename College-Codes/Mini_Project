@@ -3,24 +3,52 @@
 #include<iostream>
 using namespace std;
 
+void print(){
+    for(int i=1;i<=60;i++){
+        cout << "=";
+    }
+    cout << endl;
+}
+
+void print1(){
+    for(int i=1;i<=60;i++){
+        cout << "-";
+    }
+    cout << endl;
+}
+
 int main(){
     int totalItem;
     double totalTax = 0,Tax = 0.18,price = 0;
-    
+    string name;
+
+    cout << "Enter Name of Customer: ";
+    getline(cin,name);
+    cout << endl ;
     cout << "Enter an Number for Total Item: ";
     cin >> totalItem;;
     string names[totalItem];
-    
+
     for(int i=0;i<totalItem;i++){
         cin.ignore();
         cout << "Name of Item-" << i+1 <<": ";
         getline(cin,names[i]);
-        cout << "Price of"<< names[i] << " Item: $";
+        cout << "Price of "<< names[i] << " Item: $";
         cin >> price;
         cout << endl;
-    // cout << itemName << endl ;
     }
-    
-    
+    print();
+    cout << "                        BILL SUMMARY                        " << endl;
+    print();
+    cout << "SIMARAN ENTERPRISE                 INVOICE DATE: "<< __DATE__ << endl;
+    cout << "SINDHI-COLONY,RAJKOT               INVOICE TIME: "<< __TIME__ << endl;
+    cout << "Phone:+91 8866096042               GSTIN: 08AALCRCR2857A1ZDH" << endl;
+    print1();
+    // cout << "     ITEMS ||QUANTITY||TAX-PER-UNIT||PRICE-PER-UNIT|| AMOUNT" << endl;
+    // for(int i=1;i<=totalItem;i++){
+        
+    // }
+
+
     return 0;
 }
