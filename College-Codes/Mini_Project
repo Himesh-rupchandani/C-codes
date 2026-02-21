@@ -1,6 +1,7 @@
-// Billing System.
+ //Billing System.
 
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 void print(){
@@ -18,25 +19,30 @@ void print1(){
 }
 
 int main(){
-    int totalItem;
-    double totalTax = 0,Tax = 0.18,price = 0;
-    string name;
+     int totalItem;
+     double totalTax = 0,Price = 0,grandTotal = 0;
+     string name;
 
-    cout << "Enter Name of Customer: ";
-    getline(cin,name);
-    cout << endl ;
-    cout << "Enter an Number for Total Item: ";
-    cin >> totalItem;;
-    string names[totalItem];
+     cout << "Enter Name of Customer: ";
+     getline(cin,name);
+     cout << endl ;
+     cout << "Enter an Number for Total Item: ";
+     cin >> totalItem;;
+     string names[100];
+     string item[100];
+     int qty[100];
+     double price[100];
+     double tax[100];
+     double amount[100];
 
-    for(int i=0;i<totalItem;i++){
-        cin.ignore();
-        cout << "Name of Item-" << i+1 <<": ";
-        getline(cin,names[i]);
-        cout << "Price of "<< names[i] << " Item: $";
-        cin >> price;
-        cout << endl;
-    }
+     for(int i=0;i<totalItem;i++){
+         cin.ignore();
+         cout << "Name of Item-" << i+1 <<": ";
+         getline(cin,names[i]);
+         cout << "Price of "<< names[i] << " Item: $";
+         cin >> Price;
+         cout << endl;
+     }
     print();
     cout << "                        BILL SUMMARY                        " << endl;
     print();
@@ -44,11 +50,31 @@ int main(){
     cout << "SINDHI-COLONY,RAJKOT               INVOICE TIME: "<< __TIME__ << endl;
     cout << "Phone:+91 8866096042               GSTIN: 08AALCRCR2857A1ZDH" << endl;
     print1();
-    // cout << "     ITEMS ||QUANTITY||TAX-PER-UNIT||PRICE-PER-UNIT|| AMOUNT" << endl;
-    // for(int i=1;i<=totalItem;i++){
-        
-    // }
+    cout << setw(15) << "ITEMS";
+    cout << setw(8) << "QTY";
+    cout << setw(12) << "TAX/UNIT";
+    cout << setw(13) << "PRICE/UNIT";
+    cout << setw(12) << "AMOUNT" << endl;
+    print1();
+
+    for(int i=0;i<grandTotal;i++){
+        cout << left
+             << setw(12) << names[i]
+             << setw(11)  << qty[i]
+             << setw(12) << tax[i]
+             << setw(13) << price[i]
+             << setw(12) << amount[i]
+             << endl;
+
+             grandTotal += amount[i];
+    }
+
+     
 
 
+
+
+
+    //cout << "\n\n\n\n\n\n\n";
     return 0;
 }
