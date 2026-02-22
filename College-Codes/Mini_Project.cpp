@@ -25,9 +25,9 @@ int main(){
 
      cout << "Enter Name of Customer: ";
      getline(cin,name);
-     cout << endl ;
      cout << "Enter an Number for Total Item: ";
-     cin >> totalItem;;
+     cin >> totalItem;
+     cout << endl;
      string names[100];
      int qty[100];
      float Price[100];
@@ -44,7 +44,7 @@ int main(){
          cin >> Price[i];
          cout << endl;
          
-         amount[i] = Price[i] * qty[i] + (Price[i]*tax);
+         amount[i] = (Price[i] * qty[i]) + (Price[i]*qty[i]*tax);
      }
     print();
     cout << "                        BILL SUMMARY                        " << endl;
@@ -66,8 +66,11 @@ int main(){
         cout << left << setw(13) << Price[i] << " ";
         cout << left << setw(13) << tax;
         cout << left << setw(12) << amount[i] << endl;
+        grandTotal += amount[i];
     }
-
+    cout << right << setw(59) << grandTotal << endl;
+    print1();
+    
 
     cout << "\n\n\n\n\n\n\n";
     return 0;
