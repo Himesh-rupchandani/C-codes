@@ -3,15 +3,17 @@
 #include<iostream>
 using namespace std;
 
-int GCD(int &n1,int &n2){
-    int gcd = 1;
+int GCD(int n1,int n2){
+    
+    if(n2==0) return n1;
+    if(n1==0) return n2;
+    
+    int gcd = 0;
     if(n2>n1) swap(n1,n2);
-    for(int i=1;i<=n2;i++){
-        if(n1%i==0 && n2%i==0){
-            gcd = i;
-        }
+    for(int i=1;i<=n1;i++){
+        if(n1%i==0 && n2%i==0) gcd = i;
     }
-        return gcd;
+    return gcd;
 }
 
 int main(){
@@ -20,13 +22,10 @@ int main(){
     cin >> n1 >> n2;
     
     cout << "My GCD number is: " << GCD(n1,n2) << endl;
-    
-   
     return 0;
-}
+} 
 
 /*
 Enter the numbers: 12 15
 GCD number is: 3
-  */
-
+*/
