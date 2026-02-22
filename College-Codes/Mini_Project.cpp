@@ -50,10 +50,10 @@ int main(){
     cout << "SINDHI-COLONY,RAJKOT               INVOICE TIME: "<< __TIME__ << endl;
     cout << "Phone:+91 8866096042               GSTIN: 08AALCRCR2857A1ZDH" << endl;
     print1();
-    cout << setw(12) << "ITEMS";
-    cout << setw(11) << "QTY";
-    cout << setw(12) << "TAX/UNIT";
-    cout << setw(13) << "PRICE/UNIT";
+    cout << setw(12) << "ITEMS   ";
+    cout << setw(8) << "QTY  ";
+    cout << setw(15) << "PRICE/UNIT";
+    cout << setw(13) << "TAX/UNIT";
     cout << setw(12) << "AMOUNT" << endl;
     print1();
 
